@@ -60,12 +60,12 @@ Presentation / final image to the window
 
 | | |
 |:---:|:---:|
-| [![Reformation animation](images/image1.png)](images/reformationGif.gif) | ![Galaxy view 1](images/image1.png) |
-| ![Galaxy view 2](images/image2.png) | ![Galaxy view 3](images/image3.png) |
-| ![Galaxy view 4](images/image4.png) | ![Galaxy view 5](images/image5.png) |
-| ![Galaxy view 6](images/image6.png) |   |
+| [![Reformation animation](images/image1.png)](images/reformationGif.gif) | ![Galaxy view 1](images/image2.png) |
+| ![Galaxy view 2](images/image3.png) | ![Galaxy view 3](images/image4.png) |
+| ![Galaxy view 4](images/image5.png) | ![Galaxy view 5](images/image6.png) |
+| [![Reformation animation (gif)](images/reformationGif.gif)](images/reformationGif.gif) | ![Galaxy view 7](images/image7.png) |
 
 ### 🎬 Reformation Demo
 
 - [Watch animated preview (GIF)](images/reformationGif.gif)
-- [Watch full video (GIF replacement)](images/reformationVid.mp4)
+- [Watch full video](images/reformationVid.mp4)
