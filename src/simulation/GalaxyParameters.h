@@ -13,7 +13,7 @@ namespace gf::simulation
         //
         // Number of coherent spiral arms.
         //
-        std::uint32_t armCount = 12;
+        std::uint32_t armCount = 7;
 
 
         //
@@ -21,7 +21,7 @@ namespace gf::simulation
         // logarithmic spiral, in radians.
         //
         float armPitch =
-            19.0f *
+            0.0f *
             std::numbers::pi_v<float> /
             180.0f;
 
@@ -33,7 +33,7 @@ namespace gf::simulation
         // Larger values increasingly concentrate
         // particles near the centreline.
         //
-        float armConcentration = 1.f;
+        float armConcentration = 1.3f;
 
         //
         // Fraction of arm particles deliberately
@@ -52,14 +52,14 @@ namespace gf::simulation
         // occupy this half-angle around the spiral
         // centreline (in degrees).
         //
-        float regularArmHalfWidthInnerDegrees = 30.0f;
+        float regularArmHalfWidthInnerDegrees = 52.0f;
 
         //
         // At outer radius, regular arm particles may
         // occupy this half-angle around the spiral
         // centreline (in degrees).
         //
-        float regularArmHalfWidthOuterDegrees = 3.0f;
+        float regularArmHalfWidthOuterDegrees = 8.0f;
 
         //
         // Curve shape for the regular-arm half-width
@@ -85,13 +85,13 @@ namespace gf::simulation
         // Fraction of disk particles that become
         // inter-arm particles at inner radius.
         //
-        float interArmFractionInner = 0.22f;
+        float interArmFractionInner = 0.30f;
 
         //
         // Fraction of disk particles that become
         // inter-arm particles at outer radius.
         //
-        float interArmFractionOuter = 0.10f;
+        float interArmFractionOuter = 0.22f;
 
         //
         // Curve shape for inter-arm fraction with radius.
@@ -123,13 +123,13 @@ namespace gf::simulation
         //
         // Larger = more centrally concentrated.
         //
-        float coreFalloff = 2.3f;
+        float coreFalloff = 3.0f;
 
         //
         // Base angular rotation rate,
         // in radians per second.
         //
-        float spin = 0.45f;
+        float spin = 0.75f;
 
         //
         // Radius at which the rotation curve begins
@@ -141,20 +141,20 @@ namespace gf::simulation
         // 0 = rigid angular rotation.
         // 1 = full differential rotation curve.
         //
-        float differentialRotationStrength = 0.12f;
+        float differentialRotationStrength = 0.18f;
 
         //
         // Fraction of normal orbital acceleration
         // used for gentle radial perturbation.
         //
-        float radialPerturbationStrength = 0.04f;
+        float radialPerturbationStrength = 0.08f;
 
 
         //
         // Radial perturbation frequency relative
         // to the local orbital angular velocity.
         //
-        float radialPerturbationFrequencyScale = 0.65f;
+        float radialPerturbationFrequencyScale = 1.25f;
 
 
         //
@@ -175,14 +175,14 @@ namespace gf::simulation
         // Spatial parameters needed by the
         // population stages that follow.
         //
-        float innerArmRadius = 0.45f;
-        float outerArmRadius = 2.75f;
-        float coreRadius = 0.68f;
+        float innerArmRadius = 0.25f;
+        float outerArmRadius = 2.30f;
+        float coreRadius = 0.70f;
         //
         // Fraction of the total particle population
         // assigned to the galactic core.
         //
-        float coreParticleFraction = 0.24f;
+        float coreParticleFraction = 0.34f;
 
 
         //
@@ -204,7 +204,7 @@ namespace gf::simulation
         //
         float coreParticleIntensity = 3.0f;
 
-        float diskHalfThickness = 0.08f;
+        float diskHalfThickness = 0.10f;
 
         //
         // Stellar colour at the galactic centre.
