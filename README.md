@@ -16,8 +16,6 @@
 
 A real-time particle galaxy built with **C++**, **DirectX 12**, and **HLSL**. The application generates a large field of particles, updates their motion on the GPU, and renders them as a glowing spiral galaxy that can be reshaped and viewed interactively.
 
-The project is designed to make GPU-driven rendering easy to explore: move around the galaxy, change its spiral shape and motion, randomize its colors, and tune bloom and exposure while it is running.
-
 ## ✨ Key Features
 
 - **Real-time particle galaxy simulation** updated on the GPU
@@ -36,16 +34,67 @@ The rendering flow is intentionally straightforward at a high level:
 ```text
 Initial particle field
         ↓
-CPU setup + galaxy parameters
-        ↓
 GPU compute shader updates particle motion
         ↓
-Particle rendering into the HDR scene
+Particles render into an HDR scene
         ↓
 Bloom extraction + blur
         ↓
 Presentation / final image to the window
 ```
+
+## 📐 Core Simulation Math
+
+A few simple equations drive the galaxy's shape and particle motion.
+
+### Logarithmic Spiral
+
+```text
+r = a · e^(bθ)
+```
+
+**Purpose:** Defines the shape of the galaxy's spiral arms.
+
+* `r` = distance from the centre
+* `θ` = angle around the centre
+* `a` = starting scale
+* `b` = how tightly the spiral winds
+
+Changing these values changes how open or tightly wound the galaxy appears.
+
+### Orbital Velocity
+
+```text
+v = ω × r
+```
+
+**Purpose:** Gives particles their sideways motion around the galactic centre.
+
+* `r` = position relative to the centre
+* `ω` = angular velocity
+* `v` = resulting orbital velocity
+
+Different parts of the galaxy can rotate at different speeds, which helps create more natural-looking motion.
+
+### Centripetal Acceleration
+
+```text
+a = -ω²r
+```
+
+**Purpose:** Pulls particle motion inward so particles curve around the centre instead of travelling in a straight line.
+
+The negative direction means the acceleration points back toward the galactic centre.
+
+### Particle Update
+
+```text
+velocity += acceleration · Δt
+position += velocity · Δt
+```
+
+**Purpose:** Advances every particle through the simulation over time.
+
 
 ## 🖼️ Gallery
 
@@ -56,7 +105,4 @@ Presentation / final image to the window
 | ![Galaxy view 4](images/image5.png) | ![Galaxy view 5](images/image6.png) |
 | ![Galaxy view 7](images/image7.png) | [![Reformation animation (gif)](images/reformationGif.gif)](images/reformationGif.gif) |
 
-### 🎬 Reformation Demo
-
-- [Watch animated preview (GIF)](images/reformationGif.gif)
-- [Watch full video](images/reformationVid.mp4)
+`Δt` is the amount of simulation time that passed since the previous update. These calculations run across many particles in parallel on the GPU.
