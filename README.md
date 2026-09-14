@@ -45,7 +45,3 @@ Presentation / final image to the window
 | ![Galaxy view 1](images/image1.png) | ![Galaxy view 2](images/image2.png) |
 | ![Galaxy view 3](images/image3.png) | ![Galaxy view 4](images/image4.png) |
 | ![Galaxy view 5](images/image5.png) | ![Galaxy view 6](images/image6.png) |
-
-### 🎬 Reformation Demo
-
-[▶ Watch `reformationVid.mp4`](images/reformationVid.mp4)
