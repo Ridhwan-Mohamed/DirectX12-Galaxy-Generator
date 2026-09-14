@@ -5,7 +5,17 @@
 ![Build](https://img.shields.io/badge/build-CMake%20%2B%20Visual%20Studio-5C2D91?logo=cmake&logoColor=white)
 ![License](https://img.shields.io/badge/license-TBD-lightgrey)
 
-![Reformation preview](images/reformationGif.gif)
+<p align="center">
+  <a href="images/reformationGif.gif">
+    <img
+      src="images/image1.png"
+      alt="Reformation preview (click to open animated GIF)"
+      width="1000"
+      loading="lazy"
+      style="max-width: 100%; height: auto;"
+    />
+  </a>
+</p>
 
 A real-time particle galaxy built with **C++**, **DirectX 12**, and **HLSL**. The application generates a large field of particles, updates their motion on the GPU, and renders them as a glowing spiral galaxy that can be reshaped and viewed interactively.
 
@@ -44,7 +54,12 @@ Presentation / final image to the window
 
 | | |
 |:---:|:---:|
-| ![Reformation animation](images/reformationGif.gif) | ![Galaxy view 1](images/image1.png) |
+| [![Reformation animation](images/image1.png)](images/reformationGif.gif) | ![Galaxy view 1](images/image1.png) |
 | ![Galaxy view 2](images/image2.png) | ![Galaxy view 3](images/image3.png) |
 | ![Galaxy view 4](images/image4.png) | ![Galaxy view 5](images/image5.png) |
 | ![Galaxy view 6](images/image6.png) |   |
+
+### 🎬 Reformation Demo
+
+- [Watch animated preview (GIF)](images/reformationGif.gif)
+- [Watch full video](images/reformationVid.mp4)
