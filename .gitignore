@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+
+# CMake build output
+build/
+out/
+
+# User-specific CMake configuration
+CMakeUserPresets.json
+
+# Compiled files
+*.obj
+*.pdb
+*.ilk
+*.exe
+
+# Visual Studio user files
+*.user
+*.suo
