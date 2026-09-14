@@ -5,6 +5,8 @@
 ![Build](https://img.shields.io/badge/build-CMake%20%2B%20Visual%20Studio-5C2D91?logo=cmake&logoColor=white)
 ![License](https://img.shields.io/badge/license-TBD-lightgrey)
 
+![Reformation preview](images/reformationGif.gif)
+
 A real-time particle galaxy built with **C++**, **DirectX 12**, and **HLSL**. The application generates a large field of particles, updates their motion on the GPU, and renders them as a glowing spiral galaxy that can be reshaped and viewed interactively.
 
 The project is designed to make GPU-driven rendering easy to explore: move around the galaxy, change its spiral shape and motion, randomize its colors, and tune bloom and exposure while it is running.
@@ -42,6 +44,7 @@ Presentation / final image to the window
 
 | | |
 |:---:|:---:|
-| ![Galaxy view 1](images/image1.png) | ![Galaxy view 2](images/image2.png) |
-| ![Galaxy view 3](images/image3.png) | ![Galaxy view 4](images/image4.png) |
-| ![Galaxy view 5](images/image5.png) | ![Galaxy view 6](images/image6.png) |
+| ![Reformation animation](images/reformationGif.gif) | ![Galaxy view 1](images/image1.png) |
+| ![Galaxy view 2](images/image2.png) | ![Galaxy view 3](images/image3.png) |
+| ![Galaxy view 4](images/image4.png) | ![Galaxy view 5](images/image5.png) |
+| ![Galaxy view 6](images/image6.png) |   |
